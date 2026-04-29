@@ -18,3 +18,10 @@ Update an Event
 Delete an Event 
 Delete a Booking
 
+## Render
+Swapped over to Render (out of quotas)
+Swapped from sql to PostgreSQL 
+
+## Android Studio Design
+Created java & XML files
+Made activities
