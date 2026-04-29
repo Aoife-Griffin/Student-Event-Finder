@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Student Event Finder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5a4eb9d5542e03bf9b52c933f35157ada4138a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40a757bf8ca19e4ebd205bdbbb4ffd9393dbccc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Student Event Finder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Student Event Finder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
