@@ -160,3 +160,5 @@ C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Ent
 C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\bin\Debug\net10.0\Npgsql.dll
+C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
