@@ -25,3 +25,7 @@ Swapped from sql to PostgreSQL
 ## Android Studio Design
 Created java & XML files
 Made activities
+
+## Internationalisation
+<img width="412" height="112" alt="image" src="https://github.com/user-attachments/assets/aefef7c8-2535-43a7-a570-1aceda25e3d3" />
+
