@@ -2666,9 +2666,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student_Event_Finder\\Student Event Finder.csproj",
-      "projectName": "Student Event Finder",
-      "projectPath": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student_Event_Finder\\Student Event Finder.csproj",
+      "projectUniqueName": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student_Event_Finder\\StudentEventFinder.csproj",
+      "projectName": "StudentEventFinder",
+      "projectPath": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student_Event_Finder\\StudentEventFinder.csproj",
       "packagesPath": "C:\\Users\\Aoife\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student_Event_Finder\\obj\\",
       "projectStyle": "PackageReference",
