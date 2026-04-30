@@ -81,4 +81,6 @@ using (var scope = app.Services.CreateScope())
 var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
 app.Urls.Add($"http://*:{port}");
 
+Console.WriteLine("Migrations: " + string.Join(", ", db.Database.GetMigrations()));
+
 app.Run();
