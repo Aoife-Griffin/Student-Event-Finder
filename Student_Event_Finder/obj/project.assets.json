@@ -2666,11 +2666,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student Event Finder\\Student Event Finder.csproj",
+      "projectUniqueName": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student_Event_Finder\\Student Event Finder.csproj",
       "projectName": "Student Event Finder",
-      "projectPath": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student Event Finder\\Student Event Finder.csproj",
+      "projectPath": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student_Event_Finder\\Student Event Finder.csproj",
       "packagesPath": "C:\\Users\\Aoife\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student Event Finder\\obj\\",
+      "outputPath": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student_Event_Finder\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

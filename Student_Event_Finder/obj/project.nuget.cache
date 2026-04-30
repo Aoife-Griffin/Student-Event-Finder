@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XmrZBXr32yQ=",
+  "dgSpecHash": "DlVTdPSPL+A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student Event Finder\\Student Event Finder.csproj",
+  "projectFilePath": "C:\\Users\\Aoife\\OneDrive - Technological University Dublin\\School Work\\Year 4\\Enterprise Performance Architecture\\CA1\\Student-Event-Finder\\Student_Event_Finder\\Student Event Finder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aoife\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Aoife\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.1\\microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
