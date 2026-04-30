@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Buscador de Eventos Estudiantiles</string>
     <string name="loading_events">Cargando eventos...</string>
     <string name="error_message">Error: %1$s</string>
     <string name="no_events">No se encontraron eventos</string>
     <string name="unknown_error">Error desconocido</string>
-</resources>
+    <string name="sample_event_title">Evento de Muestra</string>
+    <string name="sample_event_location">Ubicación de Muestra</string>
+    <string name="sample_event_date">2026-05-06</string>
+    </resources>

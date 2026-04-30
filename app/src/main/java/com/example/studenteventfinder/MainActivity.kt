@@ -8,12 +8,9 @@ import androidx.compose.runtime.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import com.example.studenteventfinder.Event
-import com.example.studenteventfinder.RetrofitClient
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.CardDefaults
 import androidx.compose.ui.text.font.FontWeight
-
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.ui.Alignment
 import androidx.compose.material3.Text
@@ -24,6 +21,7 @@ import androidx.compose.material3.Card
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 
 class MainActivity : ComponentActivity() {
 
@@ -35,7 +33,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
 
 @Composable
 fun LoadingScreen() {
@@ -50,6 +47,7 @@ fun LoadingScreen() {
         }
     }
 }
+
 @Composable
 fun EventScreen() {
     var events by remember { mutableStateOf<List<Event>>(emptyList()) }
@@ -64,7 +62,19 @@ fun EventScreen() {
                 response: Response<List<Event>>
             ) {
                 if (response.isSuccessful) {
-                    events = response.body() ?: emptyList()
+                    events = response.body()?.map { event ->
+                        Event(
+                            eventId = event.eventId,
+                            title = event.title,
+                            description = event.description,
+                            category = event.category,
+                            date = event.date,
+                            time = event.time,
+                            location = event.location,
+                            imageUrl = event.imageUrl,
+                            organizer = event.organizer
+                        )
+                    } ?: emptyList()
                     loading = false
                 } else {
                     Log.e("API_ERROR", "Response not successful")
@@ -99,8 +109,6 @@ fun EventList(events: List<Event>) {
     }
 }
 
-
-
 @Composable
 fun EventItem(event: Event) {
     Card(
@@ -120,17 +128,73 @@ fun EventItem(event: Event) {
 
             Spacer(modifier = Modifier.height(8.dp))
 
+            // Description
+            Text(
+                text = event.description,
+                style = MaterialTheme.typography.bodyMedium
+            )
+
             // Location
             Text(
                 text = event.location,
                 style = MaterialTheme.typography.bodyMedium
             )
 
-            // Date
+            // Date and Time
             Text(
-                text = event.date,
+                text = "${event.date} - ${event.time}",
                 style = MaterialTheme.typography.bodySmall
             )
         }
     }
+}
+
+// Previews
+
+@Preview
+@Composable
+fun PreviewLoadingScreen() {
+    LoadingScreen()
+}
+
+@Preview
+@Composable
+fun PreviewEventScreen() {
+    EventScreen()
+}
+
+@Preview(locale = "es")
+@Composable
+fun PreviewEventItemSpanish() {
+    EventItem(
+        event = Event(
+            eventId = 1,
+            title = "Evento de Muestra",
+            description = "Descripción de evento de muestra",
+            category = "Música",
+            date = "2026-05-06",
+            time = "14:00",
+            location = "Lugar de muestra",
+            imageUrl = "https://example.com/image.jpg",
+            organizer = "Juan Pérez"
+        )
+    )
+}
+
+@Preview(locale = "en")
+@Composable
+fun PreviewEventItemEnglish() {
+    EventItem(
+        event = Event(
+            eventId = 2,
+            title = "Sample Event",
+            description = "Sample event description",
+            category = "Workshop",
+            date = "2026-05-07",
+            time = "15:30",
+            location = "Sample Location",
+            imageUrl = "https://example.com/image.jpg",
+            organizer = "Jane Doe"
+        )
+    )
 }

@@ -4,4 +4,7 @@
     <string name="error_message">Error: %1$s</string>
     <string name="no_events">No events found</string>
     <string name="unknown_error">Unknown error</string>
+    <string name="sample_event_title">Sample Event</string>
+    <string name="sample_event_location">Sample Location</string>
+    <string name="sample_event_date">2026-05-06</string>
 </resources>
