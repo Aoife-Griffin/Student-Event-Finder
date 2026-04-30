@@ -1,0 +1,8 @@
+C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\obj\Debug\net8.0\Student Event Finder.csproj.AssemblyReference.cache
+C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\obj\Debug\net8.0\Student Event Finder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\obj\Debug\net8.0\Student Event Finder.AssemblyInfoInputs.cache
+C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\obj\Debug\net8.0\Student Event Finder.AssemblyInfo.cs
+C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\obj\Debug\net8.0\Student Event Finder.csproj.CoreCompileInputs.cache
+C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\obj\Debug\net8.0\Student Event Finder.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aoife\OneDrive - Technological University Dublin\School Work\Year 4\Enterprise Performance Architecture\CA1\Student-Event-Finder\Student Event Finder\obj\Debug\net8.0\Student Event Finder.sourcelink.json
