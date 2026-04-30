@@ -11,8 +11,6 @@ WORKDIR /app
 
 COPY --from=build /app/publish .
 
-ENV ASPNETCORE_URLS=http://+:10000
+ENV ASPNETCORE_URLS=http://+:$PORT
 
-EXPOSE 10000
-
-ENTRYPOINT ["dotnet", "Student_Event_Finder.dll"]
+ENTRYPOINT ["dotnet", "Student Event Finder.dll"]
