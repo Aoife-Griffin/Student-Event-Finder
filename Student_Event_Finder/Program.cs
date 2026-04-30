@@ -4,8 +4,7 @@ using Student_Event_Finder.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Add services
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -16,8 +15,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-
+// Swagger (only in development)
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -25,59 +23,61 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
+// DATABASE SETUP (migrations + seeding)
 using (var scope = app.Services.CreateScope())
 {
-    var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
-    if (!context.Events.Any())
-{
-    context.Events.AddRange(
-        new Event
-        {
-            Title = "Freshers Week",
-            Description = "Welcome event for new students",
-            Category = "Campus Life",
-            Date = DateTime.UtcNow.AddDays(7),
-            Time = "18:00",
-            Location = "TU Dublin Main Hall",
-            ImageUrl = "https://example.com/freshers.jpg",
-            Organizer = "Student Union"
-        },
+    // 1. Create tables
+    db.Database.Migrate();
 
-        new Event
-        {
-            Title = "Career Fair",
-            Description = "Meet top employers and recruiters",
-            Category = "Careers",
-            Date = DateTime.UtcNow.AddDays(14),
-            Time = "10:00",
-            Location = "Conference Centre",
-            ImageUrl = "https://example.com/careerfair.jpg",
-            Organizer = "Careers Office"
-        },
+    // 2. Seed data if empty
+    if (!db.Events.Any())
+    {
+        db.Events.AddRange(
+            new Event
+            {
+                Title = "Freshers Week",
+                Description = "Welcome event for new students",
+                Category = "Campus Life",
+                Date = DateTime.UtcNow.AddDays(7),
+                Time = "18:00",
+                Location = "TU Dublin Main Hall",
+                ImageUrl = "https://example.com/freshers.jpg",
+                Organizer = "Student Union"
+            },
+            new Event
+            {
+                Title = "Career Fair",
+                Description = "Meet top employers and recruiters",
+                Category = "Careers",
+                Date = DateTime.UtcNow.AddDays(14),
+                Time = "10:00",
+                Location = "Conference Centre",
+                ImageUrl = "https://example.com/careerfair.jpg",
+                Organizer = "Careers Office"
+            },
+            new Event
+            {
+                Title = "Hackathon",
+                Description = "24-hour coding competition",
+                Category = "Technology",
+                Date = DateTime.UtcNow.AddDays(21),
+                Time = "09:00",
+                Location = "Computer Science Building",
+                ImageUrl = "https://example.com/hackathon.jpg",
+                Organizer = "Computer Society"
+            }
+        );
 
-        new Event
-        {
-            Title = "Hackathon",
-            Description = "24-hour coding competition",
-            Category = "Technology",
-            Date = DateTime.UtcNow.AddDays(21),
-            Time = "09:00",
-            Location = "Computer Science Building",
-            ImageUrl = "https://example.com/hackathon.jpg",
-            Organizer = "Computer Society"
-        }
-    );
-
-    context.SaveChanges();
+        db.SaveChanges();
+    }
 }
-}
 
+// Required for Render
 var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
 app.Urls.Add($"http://*:{port}");
 
