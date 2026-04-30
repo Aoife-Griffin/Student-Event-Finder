@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loading_events">Cargando eventos...</string>
+    <string name="error_message">Error: %1$s</string>
+    <string name="no_events">No se encontraron eventos</string>
+    <string name="unknown_error">Error desconocido</string>
+</resources>
