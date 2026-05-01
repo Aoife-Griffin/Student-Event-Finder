@@ -9,8 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(
-        builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -43,7 +42,7 @@ using (var scope = app.Services.CreateScope())
             Title = "Freshers Week",
             Description = "Welcome event for new students",
             Category = "Campus Life",
-            Date = DateTime.Now.AddDays(7),
+            Date = DateTime.UtcNow.AddDays(7),
             Time = "18:00",
             Location = "TU Dublin Main Hall",
             ImageUrl = "https://example.com/freshers.jpg",
@@ -55,7 +54,7 @@ using (var scope = app.Services.CreateScope())
             Title = "Career Fair",
             Description = "Meet top employers and recruiters",
             Category = "Careers",
-            Date = DateTime.Now.AddDays(14),
+            Date = DateTime.UtcNow.AddDays(14),
             Time = "10:00",
             Location = "Conference Centre",
             ImageUrl = "https://example.com/careerfair.jpg",
@@ -67,7 +66,7 @@ using (var scope = app.Services.CreateScope())
             Title = "Hackathon",
             Description = "24-hour coding competition",
             Category = "Technology",
-            Date = DateTime.Now.AddDays(21),
+            Date = DateTime.UtcNow.AddDays(21),
             Time = "09:00",
             Location = "Computer Science Building",
             ImageUrl = "https://example.com/hackathon.jpg",
